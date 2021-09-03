@@ -1,11 +1,14 @@
 let salsaButton = document.querySelector('#randomSalsa');
 let bachataButton = document.querySelector('#randomBachata');
 let resultsDiv = document.querySelector('.results');
+// let minus = document.querySelector('#minus');
 
 let input = document.querySelector('#input');
 
 salsaButton.addEventListener('click', randomSalsa);
 bachataButton.addEventListener('click', randomBachata);
+// minus.addEventListener('click', minusOne);
+
 
 function randomSalsa() {
 	// console.log(input.value);
@@ -59,6 +62,11 @@ function randomBachata() {
 		printResults(bachataMoves[randomIndex]);
 	}
 }
+
+// function minusOne(){
+// 	let newNumber = input.value - 1;
+// 	console.log(newNumber);
+// }
 
 function printResults(item) {
 	let text = document.createElement('p');
